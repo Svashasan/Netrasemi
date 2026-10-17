@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Svashasan Labs × Netrasemi Strategic Partnership Strategy</title>
+     <link rel="icon" type="image/png" href="2.png" sizes="32x32">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N89XZGM4');</script>
+<!-- End Google Tag Manager -->
+    <style>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
+                        calibri: ['Calibri', 'sans-serif'],
+                    },
+                    colors: {
+                        brandBlack: '#0B0B0B',
+                        brandCharcoal: '#1A1A1A',
+                        mutedText: '#666666',
+                        metaText: '#8A8A8A',
+                    },
+                }
+            }
+        }
+                /* Mobile menu animation styles */
+        #mobile-menu {
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(-10px);
+            pointer-events: none;
+            transition: opacity 0.35s ease-out, transform 0.35s ease-out, visibility 0s linear 0.35s;
+            display: flex;
+        }
+
+        #mobile-menu.active {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+            transition: opacity 0.35s ease-out, transform 0.35s ease-out, visibility 0s linear 0s;
+        }
+
+        #mobile-menu ul li {
+            transform: translateY(20px);
+            opacity: 0;
+            transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+        }
+
+        #mobile-menu.active ul li {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        #mobile-menu.active ul li:nth-child(1) { transition-delay: 0.05s; }
+        #mobile-menu.active ul li:nth-child(2) { transition-delay: 0.10s; }
+        #mobile-menu.active ul li:nth-child(3) { transition-delay: 0.15s; }
+        #mobile-menu.active ul li:nth-child(4) { transition-delay: 0.20s; }
+        #mobile-menu.active ul li:nth-child(5) { transition-delay: 0.25s; }
+        #mobile-menu.active ul li:nth-child(6) { transition-delay: 0.30s; }
+        #mobile-menu.active ul li:nth-child(7) { transition-delay: 0.35s; }
+
+        #menu-button {
+            align-items: center;
+            justify-content: center;
+        }
+
+        #menu-open-icon {
+            transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        #menu-button.active #menu-open-icon {
+            transform: scale(0);
+            opacity: 0;
+        }
+
+        #menu-close-icon {
+            transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+            transform: scale(0);
+            opacity: 0;
+        }
+
+        #menu-button.active #menu-close-icon {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 0.75rem 0 !important;
+            }
+
+            header .container {
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+            }
+
+            #mobile-menu {
+                padding-top: 5rem;
+                padding-bottom: 2rem;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #mobile-menu ul {
+                gap: 1.75rem !important;
+            }
+
+            #mobile-menu a {
+                font-size: 1.5rem !important;
+            }
+        }
+
+@media (max-width: 480px) {
+            header .container {
+                gap: 0.5rem;
+            }
+
+            .header-right-group a svg,
+            .header-right-group button svg {
+                width: 20px;
+                height: 20px;
+            }
+
+            #mobile-menu {
+                padding-top: 4.5rem;
+            }
+
+            #mobile-menu ul {
+                gap: 1.5rem !important;
+            }
+
+            #mobile-menu a {
+                font-size: 1.25rem !important;
+            }
+        }
+
+        /* Navigation sidebar link styles */
+        .nav-link {
+            outline: none;
+            text-decoration: none;
+        }
+        .nav-link:focus-visible {
+            outline: none;
+        }
+        .nav-link.active,
+        .nav-link:hover {
+            background-color: rgba(0,0,0,0.04);
+            box-shadow: 0 0 12px rgba(0,0,0,0.12);
+            transition: background-color 0.2s ease, box-shadow 0.3s ease;
+        }
+
+        /* Smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <link rel="stylesheet" href="/global-loader.css">
+    <script src="/global-loader.js"></script>
+    <style>
+        :root {
+            --paper: #fffdf7;
+            --line: #d9d2c5;
+            --muted: #5c574e;
+            --ink: #161513;
+        }
+
+        h1, h2, h3 {
+            scroll-margin-top: 6rem;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-white min-h-screen flex flex-col">
+
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N89XZGM4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+        <!-- Header Section -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-80 backdrop-blur-md py-4 shadow-sm">
+        <div class="container mx-auto flex items-center justify-between px-4 sm:px-6 gap-4">
+            <!-- Logo -->
+            <a href="https://svashasan.com/" class="flex-shrink-0">
+                <img src="2.png" alt="Svashasan Logo" class="h-10 w-auto object-contain">
+            </a>
+            <!-- Search Bar -->
+            <div class="relative flex items-center">
+                <i data-lucide="search" class="w-4 h-4 text-gray-400 absolute left-2.5 top-1/2 -translate-y-1/2 pointer-events-none"></i>
+                <input id="search-input" type="text" placeholder="Search research..." oninput="handleGlobalSearch(this.value)" class="w-36 sm:w-44 focus:w-40 sm:focus:w-56 pl-8 pr-3 py-1.5 bg-gray-50 border border-transparent focus:bg-white focus:border-gray-300 rounded-full text-xs transition-all duration-300 outline-none text-brandBlack">
+                <div id="search-results" class="absolute left-0 right-0 top-full mt-1 bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden hidden z-50 max-h-60 overflow-y-auto"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="flex flex-1 min-h-0">
+    <!-- Left navigation sidebar -->
+    <nav id="toc" class="hidden md:block sticky top-20 w-64 px-4 py-6 bg-white/80 backdrop-blur-md max-h-[calc(100vh-5rem)] overflow-y-auto transition-all duration-300 ease-out self-start" aria-label="Table of contents">
+        <ul class="space-y-2 text-sm">
+            <li><a href="#svashasan-labs-netrasemi" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">Svashasan Labs × Netrasemi</a></li>
+            <li><a href="#strategic-automotive-compute-software-partnership-strategy" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">Strategic Partnership Strategy</a></li>
+            <li><a href="#1-strategic-vision" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">1. Strategic Vision</a></li>
+            <li><a href="#2-why-netrasemi-is-strategically-valuable-to-svashasan" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">2. Why Netrasemi Is Valuable</a></li>
+            <li><a href="#3-why-svashasan-is-strategically-valuable-to-netrasemi" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">3. Why Svashasan Is Valuable</a></li>
+            <li><a href="#4-recommended-relationship" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">4. Recommended Relationship</a></li>
+            <li><a href="#5-commercial-principle-netrasemi-benefits-slightly-more" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">5. Commercial Principle</a></li>
+            <li><a href="#6-recommended-revenue-architecture" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">6. Revenue Architecture</a></li>
+            <li><a href="#7-the-core-commercial-flywheel" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">7. Commercial Flywheel</a></li>
+            <li><a href="#8-proposed-technical-architecture" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">8. Technical Architecture</a></li>
+            <li><a href="#9-ip-ownership-strategy" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">9. IP Ownership</a></li>
+            <li><a href="#10-foreground-ip" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">10. Foreground IP</a></li>
+            <li><a href="#11-preferred-silicon-arrangement" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">11. Preferred Silicon Arrangement</a></li>
+            <li><a href="#12-what-netrasemi-should-receive" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">12. What Netrasemi Receives</a></li>
+            <li><a href="#13-turn-svashasan-into-netrasemi-s-automotive-software-ecosystem-partner" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">13. Software Ecosystem Partner</a></li>
+            <li><a href="#14-first-product-strategy" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">14. First Product Strategy</a></li>
+            <li><a href="#15-initial-use-of-netrasemi-a2000" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">15. Initial Use of A2000</a></li>
+            <li><a href="#16-silicon-feedback-loop" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">16. Silicon Feedback Loop</a></li>
+            <li><a href="#17-long-term-product-architecture" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">17. Long‑Term Architecture</a></li>
+            <li><a href="#18-oem-value-proposition" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">18. OEM Value Proposition</a></li>
+            <li><a href="#19-90-180-day-joint-pilot" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">19. 90‑180 Day Pilot</a></li>
+            <li><a href="#20-funding-and-cost-allocation" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">20. Funding & Cost Allocation</a></li>
+            <li><a href="#21-recurring-revenue-strategy" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">21. Recurring Revenue</a></li>
+            <li><a href="#22-example-commercial-model" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">22. Example Commercial Model</a></li>
+            <li><a href="#23-per-vehicle-economics-example" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">23. Per‑Vehicle Economics</a></li>
+            <li><a href="#24-oem-account-ownership" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">24. OEM Account Ownership</a></li>
+            <li><a href="#25-non-circumvention" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">25. Non‑Circumvention</a></li>
+            <li><a href="#26-security-and-ip-segregation" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">26. Security & IP Segregation</a></li>
+            <li><a href="#27-governance" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">27. Governance</a></li>
+            <li><a href="#28-performance-based-partnership" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">28. Performance‑Based Partnership</a></li>
+            <li><a href="#29-why-netrasemi-can-benefit-more" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">29. Why Netrasemi Can Benefit More</a></li>
+            <li><a href="#30-what-svashasan-gets" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">30. What Svashasan Gets</a></li>
+            <li><a href="#31-long-term-competitive-moat" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">31. Long‑Term Competitive Moat</a></li>
+            <li><a href="#32-three-product-strategy" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">32. Three‑Product Strategy</a></li>
+            <li><a href="#33-future-silicon-roadmap" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">33. Future Silicon Roadmap</a></li>
+            <li><a href="#34-what-not-to-do" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">34. What Not to Do</a></li>
+            <li><a href="#35-recommended-legal-structure" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">35. Recommended Legal Structure</a></li>
+            <li><a href="#36-recommended-starting-deal" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">36. Recommended Starting Deal</a></li>
+            <li><a href="#37-the-strongest-strategic-sentence-for-netrasemi" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">37. Strongest Strategic Sentence</a></li>
+            <li><a href="#38-ultimate-positioning" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">38. Ultimate Positioning</a></li>
+            <li><a href="#39-overall-strategic-verdict" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">39. Overall Strategic Verdict</a></li>
+            <li><a href="#40-executive-summary" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">40. Executive Summary</a></li>
+            <li><a href="#41-one-line-strategy" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">41. One‑Line Strategy</a></li>
+        </ul>
+    </nav>
+
+    <main class="flex-grow pt-24 px-4 md:px-6">
+        <div class="container mx-auto max-w-4xl text-gray-700">
+<h1 id="svashasan-labs-netrasemi" class="text-[22px] font-bold text-gray-800 text-center mb-4 mt-10 flex items-center justify-center gap-2">
+  <img src="2.png" alt="Svashasan Logo" class="h-8 w-auto">
+  <span>Svashasan Labs</span>
+  <span class="separator" style="border-left:1px solid currentColor;height:1em;margin:0 0.5rem;"></span>
+  <img src="netrasemi.png" alt="Netrasemi Logo" class="h-8 w-auto">
+  <span>Netrasemi</span>
+</h1>
+<h2 id="strategic-automotive-compute-software-partnership-strategy" class="text-[18px] font-semibold text-gray-800 text-center mb-8 mt-0">Strategic Automotive Compute &amp; Software Partnership Strategy</h2>
+<p class="text-[16px] mb-4 leading-relaxed"><strong>Purpose:</strong> Define a mutually beneficial partnership through which Svashasan Labs and Netrasemi can jointly ship Svashasan OS, with Netrasemi receiving a slightly higher commercial benefit while Svashasan retains ownership of its core software and OS intellectual property.</p>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="1-strategic-vision" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">1. Strategic Vision</h1>
+<p class="text-[16px] mb-4 leading-relaxed">The strongest structure is <strong>not a normal software partnership and not a 50:50 joint venture</strong>.</p>
+<p class="text-[16px] mb-4 leading-relaxed">The recommended model is:</p>
+<blockquote class="border-l-4 border-gray-800 pl-4 my-5 text-[16px] leading-relaxed text-gray-800 italic"><strong>Netrasemi becomes the preferred silicon and edge-compute platform for Svashasan OS, while Svashasan becomes Netrasemi’s automotive software and autonomy platform partner.</strong></blockquote>
+<p class="text-[16px] mb-4 leading-relaxed">Netrasemi receives slightly more of the commercial upside because it carries silicon, manufacturing, hardware-validation and supply-chain risk. Svashasan retains ownership of the OS, vehicle software architecture, autonomy IP and its core software stack.</p>
+<p class="text-[16px] mb-4 leading-relaxed">The strategic positioning should be:</p>
+<blockquote class="border-l-4 border-gray-800 pl-4 my-5 text-[16px] leading-relaxed text-gray-800 italic"><strong>Netrasemi Silicon + Svashasan OS = Indigenous Vehicle Intelligence Platform</strong></blockquote>
+<p class="text-[16px] mb-4 leading-relaxed">Instead of selling:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Netrasemi → chip</li>
+<li>Svashasan → OS</li>
+</ul>
+<p class="text-[16px] mb-4 leading-relaxed">the companies jointly sell:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Netrasemi reference compute platform</li>
+<li>Svashasan OS</li>
+<li>Perception / sensor fusion</li>
+<li>Vehicle interfaces</li>
+<li>ADAS / autonomy applications</li>
+<li>Fleet / OTA infrastructure</li>
+</ul>
+<p class="text-[16px] mb-4 leading-relaxed">to OEMs, fleet operators and mobility companies.</p>
+<p class="text-[16px] mb-4 leading-relaxed">Long-term positioning:</p>
+<blockquote class="border-l-4 border-gray-800 pl-4 my-5 text-[16px] leading-relaxed text-gray-800 italic"><strong>A complete India-built computing and software platform for software-defined vehicles.</strong></blockquote>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="2-why-netrasemi-is-strategically-valuable-to-svashasan" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">2. Why Netrasemi Is Strategically Valuable to Svashasan</h1>
+<p class="text-[16px] mb-4 leading-relaxed">Netrasemi positions its SoCs around edge vision, sensor fusion, low-power computation and automotive applications. Its portfolio includes the A2000 at 12 TOPS and a higher-end A4000 roadmap, while its technology stack emphasizes DNN processing, graph-stream architecture, hardware security and scalable compute.</p>
+<p class="text-[16px] mb-4 leading-relaxed">This gives Svashasan an opportunity to move from:</p>
+<blockquote class="border-l-4 border-gray-800 pl-4 my-5 text-[16px] leading-relaxed text-gray-800 italic">“software running on somebody else’s compute”</blockquote>
+<p class="text-[16px] mb-4 leading-relaxed">to:</p>
+<blockquote class="border-l-4 border-gray-800 pl-4 my-5 text-[16px] leading-relaxed text-gray-800 italic">“software architected around an Indian silicon platform.”</blockquote>
+<p class="text-[16px] mb-4 leading-relaxed">That distinction matters.</p>
+<p class="text-[16px] mb-4 leading-relaxed">Svashasan can progressively optimize its OS for Netrasemi’s architecture instead of treating the hardware as a generic processor.</p>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="3-why-svashasan-is-strategically-valuable-to-netrasemi" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">3. Why Svashasan Is Strategically Valuable to Netrasemi</h1>
+<p class="text-[16px] mb-4 leading-relaxed">A semiconductor company can build excellent silicon and still struggle to achieve OEM adoption.</p>
+<p class="text-[16px] mb-4 leading-relaxed">An OEM does not primarily want to buy:</p>
+<blockquote class="border-l-4 border-gray-800 pl-4 my-5 text-[16px] leading-relaxed text-gray-800 italic">“12-TOPS SoC.”</blockquote>
+<p class="text-[16px] mb-4 leading-relaxed">The OEM wants:</p>
+<blockquote class="border-l-4 border-gray-800 pl-4 my-5 text-[16px] leading-relaxed text-gray-800 italic">“Here is a working vehicle compute platform that performs perception, sensor fusion, ADAS, vehicle-control integration, OTA and diagnostics.”</blockquote>
+<p class="text-[16px] mb-4 leading-relaxed">Netrasemi has been working toward reference designs, development platforms, ecosystem partnerships and real-world applications.</p>
+<p class="text-[16px] mb-4 leading-relaxed">Svashasan can become the <strong>software/reference-platform layer</strong>.</p>
+<p class="text-[16px] mb-4 leading-relaxed">Netrasemi therefore gets:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Silicon adoption</li>
+<li>Design wins</li>
+<li>OEM engagement</li>
+<li>SoM demand</li>
+<li>Evaluation-kit demand</li>
+<li>Production volumes</li>
+<li>Differentiation against generic processors</li>
+<li>Software ecosystem around its silicon</li>
+<li>Greater hardware platform stickiness</li>
+</ul>
+<p class="text-[16px] mb-4 leading-relaxed">The strongest proposition is:</p>
+<blockquote class="border-l-4 border-gray-800 pl-4 my-5 text-[16px] leading-relaxed text-gray-800 italic"><strong>Svashasan helps turn Netrasemi silicon into a complete automotive computing solution.</strong></blockquote>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="4-recommended-relationship" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">4. Recommended Relationship</h1>
+<p class="text-[16px] mb-4 leading-relaxed">Do not call this a generic “technology partnership.”</p>
+<p class="text-[16px] mb-4 leading-relaxed">Call it:</p>
+<h2 id="strategic-automotive-compute-software-partnership" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Strategic Automotive Compute &amp; Software Partnership</h2>
+<p class="text-[16px] mb-4 leading-relaxed">The partnership should have three layers.</p>
+<h3 id="layer-1-silicon" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Layer 1 — Silicon</h3>
+<p class="text-[16px] mb-4 leading-relaxed"><strong>Owned by Netrasemi</strong></p>
+<p class="text-[16px] mb-4 leading-relaxed">Netrasemi provides:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>SoC</li>
+<li>SoM / evaluation hardware</li>
+<li>BSP</li>
+<li>Drivers</li>
+<li>Hardware accelerators</li>
+<li>SDK</li>
+<li>Board support</li>
+<li>Hardware security</li>
+<li>Silicon optimization</li>
+<li>Hardware roadmap</li>
+</ul>
+<h3 id="layer-2-svashasan-os" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Layer 2 — Svashasan OS</h3>
+<p class="text-[16px] mb-4 leading-relaxed"><strong>Owned by Svashasan</strong></p>
+<p class="text-[16px] mb-4 leading-relaxed">Svashasan provides:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Vehicle operating-system architecture</li>
+<li>Perception orchestration</li>
+<li>Sensor management</li>
+<li>Sensor fusion software</li>
+<li>Decision layer</li>
+<li>Vehicle-state management</li>
+<li>ADAS software</li>
+<li>Autonomy orchestration</li>
+<li>OTA orchestration</li>
+<li>Diagnostics</li>
+<li>Application framework</li>
+<li>Vehicle compute resource management</li>
+</ul>
+<h3 id="layer-3-oem-solution" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Layer 3 — OEM Solution</h3>
+<p class="text-[16px] mb-4 leading-relaxed"><strong>Jointly commercialized</strong></p>
+<p class="text-[16px] mb-4 leading-relaxed">Netrasemi + Svashasan provide:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Reference vehicle platform</li>
+<li>Hardware + OS</li>
+<li>Perception stack</li>
+<li>ADAS applications</li>
+<li>Integration support</li>
+<li>Validation</li>
+<li>Deployment tooling</li>
+<li>Fleet software</li>
+<li>Long-term support</li>
+</ul>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="5-commercial-principle-netrasemi-benefits-slightly-more" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">5. Commercial Principle: Netrasemi Benefits Slightly More</h1>
+<p class="text-[16px] mb-4 leading-relaxed">The partnership should be economically asymmetric but strategically balanced.</p>
+<p class="text-[16px] mb-4 leading-relaxed">Netrasemi should receive a slightly larger share of joint platform revenue because it carries:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Silicon development risk</li>
+<li>Hardware risk</li>
+<li>Manufacturing risk</li>
+<li>Supply-chain risk</li>
+<li>Board/platform development risk</li>
+</ul>
+<p class="text-[16px] mb-4 leading-relaxed">However, Svashasan should not give away its core software IP or its entire software business.</p>
+<p class="text-[16px] mb-4 leading-relaxed">The recommended starting point for joint platform revenue is:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li><strong>Netrasemi: 55–60%</strong></li>
+<li><strong>Svashasan: 40–45%</strong></li>
+</ul>
+<p class="text-[16px] mb-4 leading-relaxed">A practical opening position is:</p>
+<blockquote class="border-l-4 border-gray-800 pl-4 my-5 text-[16px] leading-relaxed text-gray-800 italic"><strong>Netrasemi 55% / Svashasan 45%</strong></blockquote>
+<p class="text-[16px] mb-4 leading-relaxed">This split should apply only to <strong>joint platform revenue</strong>, not to everything either company earns independently.</p>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="6-recommended-revenue-architecture" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">6. Recommended Revenue Architecture</h1>
+<p class="text-[16px] mb-4 leading-relaxed">Do not use a single percentage for every revenue category.</p>
+<p class="text-[16px] mb-4 leading-relaxed">Create separate commercial buckets.</p>
+<div class="overflow-x-auto mb-6"><table class="w-full text-[16px] border-collapse"><thead><tr><th class="text-left font-semibold text-gray-800 px-3 py-2 border-b border-[#d9d2c5]">Revenue Category</th><th class="text-left font-semibold text-gray-800 px-3 py-2 border-b border-[#d9d2c5]">Netrasemi</th><th class="text-left font-semibold text-gray-800 px-3 py-2 border-b border-[#d9d2c5]">Svashasan</th></tr></thead><tbody><tr><td class="px-3 py-2 border-b border-[#d9d2c5] align-top">Silicon / SoC</td><td class="px-3 py-2 border-b border-[#d9d2c5] align-top">100%</td><td class="px-3 py-2 border-b border-[#d9d2c5] align-top">0%</td></tr><tr><td class="px-3 py-2 border-b border-[#d9d2c5] align-top">Svashasan OS licensing</td><td class="px-3 py-2 border-b border-[#d9d2c5] align-top">0%</td><td class="px-3 py-2 border-b border-[#d9d2c5] align-top">100%</td></tr><tr><td class="px-3 py-2 border-b border-[#d9d2c5] align-top">Joint automotive platform</td><td class="px-3 py-2 border-b border-[#d9d2c5] align-top">55%</td><td class="px-3 py-2 border-b border-[#d9d2c5] align-top">45%</td></tr><tr><td class="px-3 py-2 border-b border-[#d9d2c5] align-top">Joint engineering / integration</td><td class="px-3 py-2 border-b border-[#d9d2c5] align-top">60%</td><td class="px-3 py-2 border-b border-[#d9d2c5] align-top">40%</td></tr><tr><td class="px-3 py-2 border-b border-[#d9d2c5] align-top">Fleet / cloud software</td><td class="px-3 py-2 border-b border-[#d9d2c5] align-top">20%</td><td class="px-3 py-2 border-b border-[#d9d2c5] align-top">80%</td></tr><tr><td class="px-3 py-2 border-b border-[#d9d2c5] align-top">Custom silicon development</td><td class="px-3 py-2 border-b border-[#d9d2c5] align-top">70%</td><td class="px-3 py-2 border-b border-[#d9d2c5] align-top">30%</td></tr><tr><td class="px-3 py-2 border-b border-[#d9d2c5] align-top">OEM platform program</td><td class="px-3 py-2 border-b border-[#d9d2c5] align-top">55%</td><td class="px-3 py-2 border-b border-[#d9d2c5] align-top">45%</td></tr></tbody></table></div>
+<p class="text-[16px] mb-4 leading-relaxed">These percentages are negotiation starting points rather than fixed legal terms.</p>
+<p class="text-[16px] mb-4 leading-relaxed">The principle is:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Netrasemi owns and monetizes its hardware.</li>
+<li>Svashasan owns and monetizes its OS/software.</li>
+<li>Joint platform economics favor Netrasemi slightly.</li>
+<li>Svashasan retains stronger economics on software and fleet/cloud.</li>
+<li>Custom silicon economics favor Netrasemi significantly.</li>
+</ul>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="7-the-core-commercial-flywheel" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">7. The Core Commercial Flywheel</h1>
+<p class="text-[16px] mb-4 leading-relaxed">The real opportunity is not selling one chip.</p>
+<p class="text-[16px] mb-4 leading-relaxed">The goal is to create a platform lock-in loop:</p>
+<pre class="text-[13px] sm:text-[14px] leading-relaxed font-mono bg-[#fffdf7] border border-[#d9d2c5] text-[#161513] p-4 mb-6 overflow-x-auto whitespace-pre">OEM selects Netrasemi platform
+          ↓
+Svashasan OS deployed
+          ↓
+OEM integrates sensors and actuators
+          ↓
+Vehicle applications run on Svashasan OS
+          ↓
+Future vehicle programs reuse platform
+          ↓
+More vehicles → more Netrasemi chips
+          ↓
+More vehicles → more Svashasan OS deployments
+          ↓
+Recurring revenue for both companies</pre>
+<p class="text-[16px] mb-4 leading-relaxed">This creates two mutually reinforcing businesses:</p>
+<ol class="list-decimal pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Netrasemi&#x27;s silicon business</li>
+<li>Svashasan&#x27;s vehicle software business</li>
+</ol>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="8-proposed-technical-architecture" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">8. Proposed Technical Architecture</h1>
+<p class="text-[16px] mb-4 leading-relaxed">The target architecture should look conceptually like this:</p>
+<pre class="text-[13px] sm:text-[14px] leading-relaxed font-mono bg-[#fffdf7] border border-[#d9d2c5] text-[#161513] p-4 mb-6 overflow-x-auto whitespace-pre">                    OEM VEHICLE
+                         │
+        ┌────────────────┴────────────────┐
+        │                                 │
+     Sensors                           Vehicle
+ Cameras / Radar / LiDAR              Systems
+        │                                 │
+        └──────────────┬──────────────────┘
+                       │
+                Netrasemi SoC
+                 / Compute
+                       │
+              ┌────────┴─────────┐
+              │                  │
+         Hardware BSP        Accelerators
+              │                  │
+              └────────┬─────────┘
+                       │
+                SVASHASAN OS
+                       │
+        ┌──────────────┼──────────────┐
+        │              │              │
+    Perception     Sensor Fusion    Localization
+        │              │              │
+        └──────────────┼──────────────┘
+                       │
+                 Decision Layer
+                       │
+             ADAS / Autonomy Layer
+                       │
+               Vehicle Control
+                       │
+                 CAN / Ethernet
+                       │
+                    Vehicle</pre>
+<p class="text-[16px] mb-4 leading-relaxed">Above the vehicle layer:</p>
+<pre class="text-[13px] sm:text-[14px] leading-relaxed font-mono bg-[#fffdf7] border border-[#d9d2c5] text-[#161513] p-4 mb-6 overflow-x-auto whitespace-pre">                    Fleet Cloud
+                        │
+                        │
+                 OTA / Telemetry
+                        │
+                 Svashasan Cloud
+                        │
+                    Vehicles</pre>
+<p class="text-[16px] mb-4 leading-relaxed">The hardware/software abstraction boundary must remain clean.</p>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="9-ip-ownership-strategy" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">9. IP Ownership Strategy</h1>
+<p class="text-[16px] mb-4 leading-relaxed">This is one of the most important parts of the partnership.</p>
+<p class="text-[16px] mb-4 leading-relaxed">Avoid a blanket clause such as:</p>
+<blockquote class="border-l-4 border-gray-800 pl-4 my-5 text-[16px] leading-relaxed text-gray-800 italic">“All jointly developed IP is jointly owned.”</blockquote>
+<p class="text-[16px] mb-4 leading-relaxed">That creates unnecessary long-term risk.</p>
+<p class="text-[16px] mb-4 leading-relaxed">Instead divide IP into three categories.</p>
+<hr class="border-[#d9d2c5] my-8">
+<h2 id="9-1-background-ip" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">9.1 Background IP</h2>
+<p class="text-[16px] mb-4 leading-relaxed">Everything created before the partnership remains owned by the original party.</p>
+<h3 id="netrasemi-background-ip" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Netrasemi Background IP</h3>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>SoC architecture</li>
+<li>Silicon IP</li>
+<li>NPU</li>
+<li>Hardware accelerators</li>
+<li>Chip architecture</li>
+<li>Hardware security</li>
+<li>RTL</li>
+<li>Silicon designs</li>
+<li>Existing firmware</li>
+<li>Existing SDK components</li>
+</ul>
+<h3 id="svashasan-background-ip" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Svashasan Background IP</h3>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Svashasan OS architecture</li>
+<li>Autonomy architecture</li>
+<li>Perception software</li>
+<li>Sensor-fusion software</li>
+<li>Orchestration</li>
+<li>Software frameworks</li>
+<li>OTA architecture</li>
+<li>Algorithms</li>
+<li>Proprietary tooling</li>
+<li>Existing software components</li>
+</ul>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="10-foreground-ip" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">10. Foreground IP</h1>
+<p class="text-[16px] mb-4 leading-relaxed">Foreground IP means technology created during the partnership.</p>
+<p class="text-[16px] mb-4 leading-relaxed">Ownership should follow actual contribution and technical boundaries.</p>
+<h3 id="netrasemi-owned" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Netrasemi-owned</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Hardware-specific optimizations and silicon-level inventions.</p>
+<h3 id="svashasan-owned" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Svashasan-owned</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Vehicle software and OS improvements.</p>
+<h3 id="joint" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Joint</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Only inventions that are genuinely inseparable.</p>
+<p class="text-[16px] mb-4 leading-relaxed">Example:</p>
+<blockquote class="border-l-4 border-gray-800 pl-4 my-5 text-[16px] leading-relaxed text-gray-800 italic">Netrasemi hardware accelerator + Svashasan software execution model</blockquote>
+<p class="text-[16px] mb-4 leading-relaxed">may produce a jointly licensed technology.</p>
+<p class="text-[16px] mb-4 leading-relaxed">Even then:</p>
+<blockquote class="border-l-4 border-gray-800 pl-4 my-5 text-[16px] leading-relaxed text-gray-800 italic"><strong>Joint ownership should be the exception, not the default.</strong></blockquote>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="11-preferred-silicon-arrangement" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">11. Preferred Silicon Arrangement</h1>
+<p class="text-[16px] mb-4 leading-relaxed">Offer Netrasemi:</p>
+<h2 id="preferred-automotive-silicon-partner-status" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Preferred Automotive Silicon Partner Status</h2>
+<p class="text-[16px] mb-4 leading-relaxed">Do not immediately grant unlimited exclusivity.</p>
+<p class="text-[16px] mb-4 leading-relaxed">Recommended structure:</p>
+<blockquote class="border-l-4 border-gray-800 pl-4 my-5 text-[16px] leading-relaxed text-gray-800 italic">Netrasemi becomes Svashasan’s preferred silicon partner for designated automotive compute configurations for an initial 3-year period.</blockquote>
+<p class="text-[16px] mb-4 leading-relaxed">Svashasan should retain the ability to support other silicon platforms when required by OEMs or technical programs.</p>
+<p class="text-[16px] mb-4 leading-relaxed">Potential platforms may eventually include:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Netrasemi</li>
+<li>NVIDIA</li>
+<li>Qualcomm</li>
+<li>Renesas</li>
+<li>Texas Instruments</li>
+<li>Other automotive silicon providers</li>
+</ul>
+<p class="text-[16px] mb-4 leading-relaxed">The strategic objective is:</p>
+<blockquote class="border-l-4 border-gray-800 pl-4 my-5 text-[16px] leading-relaxed text-gray-800 italic"><strong>Preferred relationship, not dangerous permanent dependency.</strong></blockquote>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="12-what-netrasemi-should-receive" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">12. What Netrasemi Should Receive</h1>
+<p class="text-[16px] mb-4 leading-relaxed">Netrasemi should receive meaningful strategic benefits in exchange for the favorable economics.</p>
+<h3 id="1-preferred-silicon-position" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">1. Preferred silicon position</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Netrasemi becomes the first silicon platform Svashasan optimizes for automotive deployment.</p>
+<h3 id="2-co-branding" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">2. Co-branding</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Potential positioning:</p>
+<blockquote class="border-l-4 border-gray-800 pl-4 my-5 text-[16px] leading-relaxed text-gray-800 italic"><strong>Svashasan OS — Optimized for Netrasemi</strong></blockquote>
+<p class="text-[16px] mb-4 leading-relaxed">or:</p>
+<blockquote class="border-l-4 border-gray-800 pl-4 my-5 text-[16px] leading-relaxed text-gray-800 italic"><strong>Netrasemi Automotive Compute Platform powered by Svashasan OS</strong></blockquote>
+<h3 id="3-reference-design" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">3. Reference design</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Build a joint reference vehicle compute unit.</p>
+<h3 id="4-oem-introductions" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">4. OEM introductions</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Jointly approach OEMs.</p>
+<h3 id="5-silicon-feedback" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">5. Silicon feedback</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Svashasan provides Netrasemi with real workload feedback regarding:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Compute bottlenecks</li>
+<li>Memory bandwidth</li>
+<li>Accelerator requirements</li>
+<li>Sensor interfaces</li>
+<li>Thermal requirements</li>
+<li>Latency</li>
+<li>Perception workloads</li>
+<li>Safety requirements</li>
+</ul>
+<p class="text-[16px] mb-4 leading-relaxed">This can influence Netrasemi’s future silicon roadmap.</p>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="13-turn-svashasan-into-netrasemi-s-automotive-software-ecosystem-partner" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">13. Turn Svashasan into Netrasemi’s Automotive Software Ecosystem Partner</h1>
+<p class="text-[16px] mb-4 leading-relaxed">This is potentially the most important strategic positioning.</p>
+<p class="text-[16px] mb-4 leading-relaxed">The relationship should be framed as:</p>
+<blockquote class="border-l-4 border-gray-800 pl-4 my-5 text-[16px] leading-relaxed text-gray-800 italic"><strong>“We don&#x27;t just optimize our OS for Netrasemi. We help Netrasemi build an automotive software ecosystem around its silicon.”</strong></blockquote>
+<p class="text-[16px] mb-4 leading-relaxed">This is much stronger than being merely a software customer.</p>
+<p class="text-[16px] mb-4 leading-relaxed">Netrasemi gets:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>An automotive software platform</li>
+<li>Reference applications</li>
+<li>A working vehicle compute demonstration</li>
+<li>OEM-ready architecture</li>
+<li>An integration partner</li>
+<li>Software validation</li>
+<li>Feedback for future silicon</li>
+</ul>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="14-first-product-strategy" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">14. First Product Strategy</h1>
+<p class="text-[16px] mb-4 leading-relaxed">Do not begin by promising full autonomous driving or Level 4 autonomy.</p>
+<p class="text-[16px] mb-4 leading-relaxed">Start with:</p>
+<h1 id="svashasan-automotive-compute-platform-gen-1" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">Svashasan Automotive Compute Platform — Gen 1</h1>
+<p class="text-[16px] mb-4 leading-relaxed">Target capabilities:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Camera perception</li>
+<li>Object detection</li>
+<li>Lane detection</li>
+<li>Driver monitoring</li>
+<li>Collision warning</li>
+<li>Emergency braking</li>
+<li>Adaptive cruise control</li>
+<li>Surround perception</li>
+<li>Sensor fusion</li>
+<li>Localization</li>
+<li>Fleet telemetry</li>
+</ul>
+<p class="text-[16px] mb-4 leading-relaxed">Then progressively move toward advanced autonomy.</p>
+<p class="text-[16px] mb-4 leading-relaxed">The first objective should be a credible, measurable, OEM-ready compute platform.</p>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="15-initial-use-of-netrasemi-a2000" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">15. Initial Use of Netrasemi A2000</h1>
+<p class="text-[16px] mb-4 leading-relaxed">Netrasemi describes the A2000 as a mid-range 12-TOPS Edge AI SoC with applications including complex vision workloads and sensor fusion.</p>
+<p class="text-[16px] mb-4 leading-relaxed">This makes it a potentially useful starting point for the first development platform, subject to actual:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Automotive interface availability</li>
+<li>Thermal requirements</li>
+<li>Safety requirements</li>
+<li>Hardware validation</li>
+<li>Performance benchmarks</li>
+<li>Production qualification</li>
+<li>Sensor throughput requirements</li>
+</ul>
+<p class="text-[16px] mb-4 leading-relaxed">Do not claim that the A2000 is automatically a production-ready autonomous-driving processor.</p>
+<p class="text-[16px] mb-4 leading-relaxed">The appropriate positioning is:</p>
+<blockquote class="border-l-4 border-gray-800 pl-4 my-5 text-[16px] leading-relaxed text-gray-800 italic"><strong>Use A2000 as the initial development and validation platform.</strong></blockquote>
+<p class="text-[16px] mb-4 leading-relaxed">Then jointly define requirements for future automotive-focused silicon.</p>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="16-silicon-feedback-loop" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">16. Silicon Feedback Loop</h1>
+<p class="text-[16px] mb-4 leading-relaxed">The partnership becomes much more valuable if it creates a direct software-to-silicon feedback loop.</p>
+<h3 id="generation-1" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Generation 1</h3>
+<p class="text-[16px] mb-4 leading-relaxed">A2000-based platform.</p>
+<p class="text-[16px] mb-4 leading-relaxed">↓</p>
+<h3 id="vehicle-testing" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Vehicle testing</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Svashasan measures:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>FPS</li>
+<li>Latency</li>
+<li>Power</li>
+<li>Memory bandwidth</li>
+<li>Sensor throughput</li>
+<li>Thermal behavior</li>
+<li>Perception performance</li>
+<li>Boot time</li>
+<li>OTA reliability</li>
+</ul>
+<p class="text-[16px] mb-4 leading-relaxed">↓</p>
+<h3 id="generation-2-requirements" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Generation 2 requirements</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Svashasan communicates:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Required TOPS</li>
+<li>Memory bandwidth</li>
+<li>Camera interfaces</li>
+<li>Radar interfaces</li>
+<li>LiDAR requirements</li>
+<li>Safety architecture</li>
+<li>Hardware isolation</li>
+<li>Accelerators</li>
+<li>Security requirements</li>
+</ul>
+<p class="text-[16px] mb-4 leading-relaxed">↓</p>
+<h3 id="netrasemi-designs-next-generation-silicon" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Netrasemi designs next-generation silicon</h3>
+<p class="text-[16px] mb-4 leading-relaxed">This means future Netrasemi hardware is designed around actual vehicle workloads rather than theoretical benchmarks.</p>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="17-long-term-product-architecture" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">17. Long-Term Product Architecture</h1>
+<p class="text-[16px] mb-4 leading-relaxed">Eventually build:</p>
+<h1 id="svashasan-automotive-reference-platform" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">Svashasan Automotive Reference Platform</h1>
+<h3 id="hardware" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Hardware</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Netrasemi SoC / SoM</p>
+<h3 id="operating-system" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Operating System</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Svashasan OS</p>
+<h3 id="perception" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Perception</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Camera + radar + future LiDAR</p>
+<h3 id="middleware" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Middleware</h3>
+<p class="text-[16px] mb-4 leading-relaxed">ROS2 / DDS / automotive middleware as appropriate</p>
+<h3 id="vehicle-integration" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Vehicle Integration</h3>
+<p class="text-[16px] mb-4 leading-relaxed">CAN / CAN-FD / Automotive Ethernet</p>
+<h3 id="security" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Security</h3>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Secure boot</li>
+<li>Hardware root of trust</li>
+<li>OTA security</li>
+<li>Encrypted communication</li>
+<li>Access control</li>
+<li>Key management</li>
+</ul>
+<h3 id="cloud" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Cloud</h3>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Fleet management</li>
+<li>Telemetry</li>
+<li>OTA</li>
+<li>Diagnostics</li>
+<li>Analytics</li>
+</ul>
+<h3 id="developer-platform" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Developer Platform</h3>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>SDK</li>
+<li>Simulation</li>
+<li>Hardware development kit</li>
+<li>Vehicle APIs</li>
+<li>Testing framework</li>
+</ul>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="18-oem-value-proposition" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">18. OEM Value Proposition</h1>
+<p class="text-[16px] mb-4 leading-relaxed">Do not approach OEMs by saying:</p>
+<blockquote class="border-l-4 border-gray-800 pl-4 my-5 text-[16px] leading-relaxed text-gray-800 italic">“Please adopt Svashasan OS.”</blockquote>
+<p class="text-[16px] mb-4 leading-relaxed">Instead say:</p>
+<blockquote class="border-l-4 border-gray-800 pl-4 my-5 text-[16px] leading-relaxed text-gray-800 italic"><strong>“We can provide an Indian vehicle-compute platform that reduces your integration burden.”</strong></blockquote>
+<p class="text-[16px] mb-4 leading-relaxed">The OEM receives:</p>
+<h3 id="hardware" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Hardware</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Netrasemi platform</p>
+<h3 id="software" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Software</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Svashasan OS</p>
+<h3 id="apis" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">APIs</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Vehicle integration interfaces</p>
+<h3 id="development" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Development</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Joint engineering support</p>
+<h3 id="testing" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Testing</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Simulation + hardware testing</p>
+<h3 id="deployment" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Deployment</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Pilot fleet</p>
+<h3 id="production" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Production</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Volume silicon + production software</p>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="19-90-180-day-joint-pilot" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">19. 90–180 Day Joint Pilot</h1>
+<p class="text-[16px] mb-4 leading-relaxed">The first commercial engineering program should be a concrete 90–180 day pilot.</p>
+<h2 id="phase-1-0-30-days" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Phase 1 — 0–30 Days</h2>
+<p class="text-[16px] mb-4 leading-relaxed">Architecture alignment.</p>
+<p class="text-[16px] mb-4 leading-relaxed">Deliverables:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Hardware requirements</li>
+<li>Software requirements</li>
+<li>Interface definitions</li>
+<li>SDK integration plan</li>
+<li>BSP integration</li>
+<li>Performance targets</li>
+</ul>
+<h2 id="phase-2-30-90-days" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Phase 2 — 30–90 Days</h2>
+<p class="text-[16px] mb-4 leading-relaxed">Bring Svashasan OS onto Netrasemi development hardware.</p>
+<p class="text-[16px] mb-4 leading-relaxed">Deliverables:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Boot</li>
+<li>Device drivers</li>
+<li>Accelerator integration</li>
+<li>Perception</li>
+<li>Sensor pipeline</li>
+<li>Basic ADAS</li>
+<li>Resource management</li>
+</ul>
+<h2 id="phase-3-90-150-days" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Phase 3 — 90–150 Days</h2>
+<p class="text-[16px] mb-4 leading-relaxed">Vehicle integration.</p>
+<p class="text-[16px] mb-4 leading-relaxed">Deliverables:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Cameras</li>
+<li>CAN</li>
+<li>Radar</li>
+<li>Localization</li>
+<li>Vehicle controls</li>
+<li>OTA</li>
+<li>Diagnostics</li>
+</ul>
+<h2 id="phase-4-150-180-days" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Phase 4 — 150–180 Days</h2>
+<p class="text-[16px] mb-4 leading-relaxed">Joint demonstration.</p>
+<p class="text-[16px] mb-4 leading-relaxed">Target:</p>
+<blockquote class="border-l-4 border-gray-800 pl-4 my-5 text-[16px] leading-relaxed text-gray-800 italic"><strong>A vehicle running Svashasan OS on Netrasemi silicon.</strong></blockquote>
+<p class="text-[16px] mb-4 leading-relaxed">This demonstration can become the foundation for OEM discussions.</p>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="20-funding-and-cost-allocation" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">20. Funding and Cost Allocation</h1>
+<p class="text-[16px] mb-4 leading-relaxed">Do not allow the partnership to become an unfunded engineering project.</p>
+<p class="text-[16px] mb-4 leading-relaxed">Use a:</p>
+<h2 id="joint-development-agreement" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Joint Development Agreement</h2>
+<h3 id="netrasemi-contributes" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Netrasemi contributes</h3>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Silicon</li>
+<li>Development boards</li>
+<li>Engineering support</li>
+<li>BSP</li>
+<li>Hardware resources</li>
+<li>Hardware debugging</li>
+<li>Hardware roadmap access</li>
+</ul>
+<h3 id="svashasan-contributes" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Svashasan contributes</h3>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>OS engineering</li>
+<li>Perception integration</li>
+<li>Autonomy software</li>
+<li>Vehicle software</li>
+<li>System integration</li>
+</ul>
+<h3 id="oem-contributes" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">OEM contributes</h3>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Vehicle</li>
+<li>Sensors</li>
+<li>Vehicle interfaces</li>
+<li>Testing environment</li>
+</ul>
+<p class="text-[16px] mb-4 leading-relaxed">For deeper customization:</p>
+<blockquote class="border-l-4 border-gray-800 pl-4 my-5 text-[16px] leading-relaxed text-gray-800 italic"><strong>OEM pays development fees.</strong></blockquote>
+<p class="text-[16px] mb-4 leading-relaxed">Major OEM customization should have a paid Statement of Work.</p>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="21-recurring-revenue-strategy" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">21. Recurring Revenue Strategy</h1>
+<p class="text-[16px] mb-4 leading-relaxed">Do not depend solely on one-time engineering fees.</p>
+<p class="text-[16px] mb-4 leading-relaxed">Svashasan should establish recurring revenue through:</p>
+<h2 id="per-vehicle-software-licensing" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Per-vehicle software licensing</h2>
+<p class="text-[16px] mb-4 leading-relaxed">A software fee per deployed vehicle.</p>
+<h2 id="annual-software-support" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Annual software support</h2>
+<p class="text-[16px] mb-4 leading-relaxed">A recurring support / maintenance fee.</p>
+<h2 id="fleet-platform" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Fleet platform</h2>
+<p class="text-[16px] mb-4 leading-relaxed">Recurring fee per vehicle per month or year.</p>
+<p class="text-[16px] mb-4 leading-relaxed">Netrasemi receives:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Hardware revenue</li>
+<li>Silicon revenue</li>
+<li>Potential share of joint platform revenue</li>
+</ul>
+<p class="text-[16px] mb-4 leading-relaxed">Svashasan receives:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>OS licensing</li>
+<li>Software services</li>
+<li>Fleet/cloud revenue</li>
+<li>Support</li>
+<li>Software upgrades</li>
+</ul>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="22-example-commercial-model" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">22. Example Commercial Model</h1>
+<p class="text-[16px] mb-4 leading-relaxed">Suppose an OEM pays:</p>
+<blockquote class="border-l-4 border-gray-800 pl-4 my-5 text-[16px] leading-relaxed text-gray-800 italic"><strong>₹10 crore for a platform program</strong></blockquote>
+<p class="text-[16px] mb-4 leading-relaxed">A possible allocation could be:</p>
+<h3 id="4-5-crore" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">₹4–5 crore</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Netrasemi hardware / silicon / compute platform</p>
+<h3 id="2-3-crore" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">₹2–3 crore</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Svashasan software / OS / autonomy</p>
+<h3 id="2-crore" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">₹2 crore</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Joint engineering / integration / validation</p>
+<h3 id="1-crore" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">₹1 crore</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Support / deployment / infrastructure</p>
+<p class="text-[16px] mb-4 leading-relaxed">These are illustrative figures, not final pricing.</p>
+<p class="text-[16px] mb-4 leading-relaxed">Production revenue should then become the primary long-term economic engine.</p>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="23-per-vehicle-economics-example" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">23. Per-Vehicle Economics Example</h1>
+<p class="text-[16px] mb-4 leading-relaxed">Suppose one deployed vehicle generates:</p>
+<blockquote class="border-l-4 border-gray-800 pl-4 my-5 text-[16px] leading-relaxed text-gray-800 italic"><strong>₹50,000 platform revenue</strong></blockquote>
+<p class="text-[16px] mb-4 leading-relaxed">Potential allocation:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Netrasemi — ₹27,500</li>
+<li>Svashasan — ₹22,500</li>
+</ul>
+<p class="text-[16px] mb-4 leading-relaxed">Then suppose the annual cloud/fleet component generates:</p>
+<blockquote class="border-l-4 border-gray-800 pl-4 my-5 text-[16px] leading-relaxed text-gray-800 italic"><strong>₹5,000/year</strong></blockquote>
+<p class="text-[16px] mb-4 leading-relaxed">Potential allocation:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Svashasan — ₹4,000</li>
+<li>Netrasemi — ₹1,000</li>
+</ul>
+<p class="text-[16px] mb-4 leading-relaxed">This makes Netrasemi’s overall economics stronger while preserving Svashasan’s software recurring revenue.</p>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="24-oem-account-ownership" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">24. OEM Account Ownership</h1>
+<p class="text-[16px] mb-4 leading-relaxed">Do not allow one partner to control all OEM relationships.</p>
+<p class="text-[16px] mb-4 leading-relaxed">Recommended principle:</p>
+<h3 id="jointly-sourced-oem-opportunity" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Jointly sourced OEM opportunity</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Joint account.</p>
+<h3 id="svashasan-originated-oem" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Svashasan-originated OEM</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Svashasan retains account rights, subject to agreed commercial participation by Netrasemi.</p>
+<h3 id="netrasemi-originated-oem" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Netrasemi-originated OEM</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Netrasemi retains account rights, subject to agreed Svashasan participation.</p>
+<p class="text-[16px] mb-4 leading-relaxed">This prevents either party from eventually bypassing the other.</p>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="25-non-circumvention" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">25. Non-Circumvention</h1>
+<p class="text-[16px] mb-4 leading-relaxed">The agreement should contain strong non-circumvention protections.</p>
+<p class="text-[16px] mb-4 leading-relaxed">Neither party should be allowed to use the other’s:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Technology</li>
+<li>Customer introductions</li>
+<li>Architecture</li>
+<li>Proprietary materials</li>
+<li>Commercial intelligence</li>
+<li>Confidential technical information</li>
+</ul>
+<p class="text-[16px] mb-4 leading-relaxed">to directly bypass the other for a defined joint program.</p>
+<p class="text-[16px] mb-4 leading-relaxed">For example:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Netrasemi should not take Svashasan’s proprietary architecture to another software provider.</li>
+<li>Svashasan should not take proprietary Netrasemi silicon information to another chip supplier.</li>
+</ul>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="26-security-and-ip-segregation" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">26. Security and IP Segregation</h1>
+<p class="text-[16px] mb-4 leading-relaxed">Use strict architectural boundaries:</p>
+<pre class="text-[13px] sm:text-[14px] leading-relaxed font-mono bg-[#fffdf7] border border-[#d9d2c5] text-[#161513] p-4 mb-6 overflow-x-auto whitespace-pre">Netrasemi IP
+      │
+      │
+Netrasemi SDK
+      │
+      ▼
+Hardware Abstraction Layer
+      │
+      ▼
+Svashasan OS
+      │
+      ▼
+Svashasan Applications</pre>
+<p class="text-[16px] mb-4 leading-relaxed">This prevents either party from requiring unrestricted access to the other’s source code.</p>
+<p class="text-[16px] mb-4 leading-relaxed">The interface between companies should be documented and controlled.</p>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="27-governance" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">27. Governance</h1>
+<p class="text-[16px] mb-4 leading-relaxed">Create a:</p>
+<h1 id="joint-steering-committee" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">Joint Steering Committee</h1>
+<p class="text-[16px] mb-4 leading-relaxed">Recommended structure:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>3 representatives from Netrasemi</li>
+<li>3 representatives from Svashasan</li>
+</ul>
+<p class="text-[16px] mb-4 leading-relaxed">Meet monthly.</p>
+<p class="text-[16px] mb-4 leading-relaxed">Responsibilities:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Roadmap</li>
+<li>Milestones</li>
+<li>Engineering issues</li>
+<li>Customer programs</li>
+<li>Commercialization</li>
+<li>IP decisions</li>
+<li>New silicon requirements</li>
+<li>Partnership performance</li>
+</ul>
+<p class="text-[16px] mb-4 leading-relaxed">Create two working groups.</p>
+<h2 id="engineering-working-group" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Engineering Working Group</h2>
+<p class="text-[16px] mb-4 leading-relaxed">Responsible for:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Integration</li>
+<li>Testing</li>
+<li>Benchmarks</li>
+<li>Architecture</li>
+<li>Hardware/software issues</li>
+<li>Release management</li>
+</ul>
+<h2 id="commercial-working-group" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Commercial Working Group</h2>
+<p class="text-[16px] mb-4 leading-relaxed">Responsible for:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>OEMs</li>
+<li>Pricing</li>
+<li>Pilots</li>
+<li>GTM</li>
+<li>Contracts</li>
+<li>Account management</li>
+</ul>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="28-performance-based-partnership" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">28. Performance-Based Partnership</h1>
+<p class="text-[16px] mb-4 leading-relaxed">Do not sign a vague multi-year partnership without measurable milestones.</p>
+<p class="text-[16px] mb-4 leading-relaxed">Recommended milestones:</p>
+<h3 id="milestone-1" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Milestone 1</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Svashasan OS boots on Netrasemi hardware.</p>
+<h3 id="milestone-2" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Milestone 2</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Perception stack operates.</p>
+<h3 id="milestone-3" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Milestone 3</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Vehicle integration completed.</p>
+<h3 id="milestone-4" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Milestone 4</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Road testing begins.</p>
+<h3 id="milestone-5" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Milestone 5</h3>
+<p class="text-[16px] mb-4 leading-relaxed">OEM proof of concept.</p>
+<h3 id="milestone-6" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Milestone 6</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Paid pilot.</p>
+<h3 id="milestone-7" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Milestone 7</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Production nomination.</p>
+<p class="text-[16px] mb-4 leading-relaxed">Deeper exclusivity or commercial benefits should unlock progressively as milestones are achieved.</p>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="29-why-netrasemi-can-benefit-more" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">29. Why Netrasemi Can Benefit More</h1>
+<p class="text-[16px] mb-4 leading-relaxed">The strongest economic argument for Netrasemi is:</p>
+<h2 id="design-wins" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Design Wins</h2>
+<p class="text-[16px] mb-4 leading-relaxed">One vehicle program can generate significant silicon volume.</p>
+<p class="text-[16px] mb-4 leading-relaxed">If Svashasan helps Netrasemi secure even one serious OEM design win, the economic upside for Netrasemi may be significantly larger than the initial partnership revenue.</p>
+<p class="text-[16px] mb-4 leading-relaxed">Therefore, giving Netrasemi 55–60% of joint platform economics can be rational.</p>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="30-what-svashasan-gets" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">30. What Svashasan Gets</h1>
+<p class="text-[16px] mb-4 leading-relaxed">Svashasan receives:</p>
+<h3 id="hardware-access" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Hardware Access</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Access to a domestic silicon platform without having to build its own chip.</p>
+<h3 id="silicon-optimization" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Silicon Optimization</h3>
+<p class="text-[16px] mb-4 leading-relaxed">The OS can be optimized specifically for Netrasemi.</p>
+<h3 id="potential-bom-advantage" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Potential BOM Advantage</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Purpose-built edge compute can eventually reduce dependence on expensive general-purpose compute, subject to actual performance and production economics.</p>
+<h3 id="oem-credibility" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">OEM Credibility</h3>
+<p class="text-[16px] mb-4 leading-relaxed">“Netrasemi + Svashasan” is a stronger hardware/software proposition.</p>
+<h3 id="reference-platform" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Reference Platform</h3>
+<p class="text-[16px] mb-4 leading-relaxed">A much stronger demonstration platform.</p>
+<h3 id="strategic-moat" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Strategic Moat</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Svashasan becomes one of the software layers attached to an indigenous silicon ecosystem.</p>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="31-long-term-competitive-moat" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">31. Long-Term Competitive Moat</h1>
+<p class="text-[16px] mb-4 leading-relaxed">The objective should not simply be:</p>
+<blockquote class="border-l-4 border-gray-800 pl-4 my-5 text-[16px] leading-relaxed text-gray-800 italic">“Svashasan runs on Netrasemi.”</blockquote>
+<p class="text-[16px] mb-4 leading-relaxed">The objective should be:</p>
+<blockquote class="border-l-4 border-gray-800 pl-4 my-5 text-[16px] leading-relaxed text-gray-800 italic"><strong>“Netrasemi’s automotive silicon roadmap is increasingly optimized around workloads generated by Svashasan OS.”</strong></blockquote>
+<p class="text-[16px] mb-4 leading-relaxed">This creates a hardware/software flywheel:</p>
+<pre class="text-[13px] sm:text-[14px] leading-relaxed font-mono bg-[#fffdf7] border border-[#d9d2c5] text-[#161513] p-4 mb-6 overflow-x-auto whitespace-pre">OEM requirements
+       ↓
+Svashasan OS
+       ↓
+Workload requirements
+       ↓
+Netrasemi silicon roadmap
+       ↓
+Better hardware
+       ↓
+Better Svashasan performance
+       ↓
+More OEM adoption
+       ↓
+More vehicles
+       ↓
+More silicon volume</pre>
+<p class="text-[16px] mb-4 leading-relaxed">This is significantly more defensible than a normal vendor relationship.</p>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="32-three-product-strategy" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">32. Three-Product Strategy</h1>
+<p class="text-[16px] mb-4 leading-relaxed">Do not sell one monolithic product.</p>
+<p class="text-[16px] mb-4 leading-relaxed">Create three levels.</p>
+<h2 id="product-1-developer-platform" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Product 1 — Developer Platform</h2>
+<h3 id="netrasemi-svashasan-development-kit" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Netrasemi + Svashasan Development Kit</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Target customers:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Universities</li>
+<li>Startups</li>
+<li>R&amp;D teams</li>
+<li>OEM engineering teams</li>
+</ul>
+<p class="text-[16px] mb-4 leading-relaxed">Components:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Netrasemi compute</li>
+<li>Svashasan OS</li>
+<li>SDK</li>
+<li>Development tools</li>
+<li>Reference applications</li>
+</ul>
+<hr class="border-[#d9d2c5] my-8">
+<h2 id="product-2-automotive-compute-platform" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Product 2 — Automotive Compute Platform</h2>
+<h3 id="netrasemi-som-svashasan-os" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Netrasemi SoM + Svashasan OS</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Target customers:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Automotive OEMs</li>
+<li>Tier-1 suppliers</li>
+<li>Mobility companies</li>
+<li>Fleet operators</li>
+</ul>
+<p class="text-[16px] mb-4 leading-relaxed">Components:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Production-oriented hardware</li>
+<li>OS</li>
+<li>Perception</li>
+<li>Sensor fusion</li>
+<li>ADAS</li>
+<li>Vehicle interfaces</li>
+</ul>
+<hr class="border-[#d9d2c5] my-8">
+<h2 id="product-3-vehicle-intelligence-platform" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Product 3 — Vehicle Intelligence Platform</h2>
+<h3 id="hardware-os-perception-adas-ota-fleet" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Hardware + OS + Perception + ADAS + OTA + Fleet</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Target:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Full OEM programs</li>
+</ul>
+<p class="text-[16px] mb-4 leading-relaxed">This becomes the highest-value commercial offering.</p>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="33-future-silicon-roadmap" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">33. Future Silicon Roadmap</h1>
+<p class="text-[16px] mb-4 leading-relaxed">The partnership should progressively move toward purpose-built automotive silicon.</p>
+<h2 id="generation-1" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Generation 1</h2>
+<h3 id="a2000-based-platform" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">A2000-based platform</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Focus:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Vision</li>
+<li>Perception</li>
+<li>ADAS</li>
+<li>Driver monitoring</li>
+<li>Sensor fusion</li>
+</ul>
+<h2 id="generation-2" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Generation 2</h2>
+<h3 id="automotive-optimized-netrasemi-silicon" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Automotive-optimized Netrasemi silicon</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Potential requirements:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Higher sensor throughput</li>
+<li>Deterministic execution</li>
+<li>Functional-safety architecture</li>
+<li>Automotive interfaces</li>
+<li>Improved accelerator support</li>
+<li>Stronger security</li>
+<li>Broader sensor fusion</li>
+<li>Better memory architecture</li>
+</ul>
+<h2 id="generation-3" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Generation 3</h2>
+<h3 id="high-compute-platform" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">High-compute platform</h3>
+<p class="text-[16px] mb-4 leading-relaxed">Target:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Advanced ADAS</li>
+<li>Autonomous-driving research</li>
+<li>Multi-camera perception</li>
+<li>Radar</li>
+<li>LiDAR</li>
+<li>Large multimodal perception workloads</li>
+</ul>
+<p class="text-[16px] mb-4 leading-relaxed">The partnership should be structured so the software platform can migrate from A2000 to future Netrasemi generations.</p>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="34-what-not-to-do" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">34. What Not to Do</h1>
+<h2 id="do-not-create-a-50-50-jv-immediately" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Do not create a 50/50 JV immediately</h2>
+<p class="text-[16px] mb-4 leading-relaxed">There is too much complexity before product-market validation.</p>
+<h2 id="do-not-make-svashasan-exclusive-to-netrasemi-globally" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Do not make Svashasan exclusive to Netrasemi globally</h2>
+<p class="text-[16px] mb-4 leading-relaxed">Svashasan needs silicon flexibility for OEM requirements.</p>
+<h2 id="do-not-transfer-svashasan-os-ip" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Do not transfer Svashasan OS IP</h2>
+<p class="text-[16px] mb-4 leading-relaxed">License it.</p>
+<h2 id="do-not-promise-level-4-autonomy-in-the-first-agreement" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Do not promise Level 4 autonomy in the first agreement</h2>
+<p class="text-[16px] mb-4 leading-relaxed">Start with a concrete automotive compute and ADAS platform.</p>
+<h2 id="do-not-build-everything-yourselves" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Do not build everything yourselves</h2>
+<p class="text-[16px] mb-4 leading-relaxed">Use Netrasemi’s existing hardware and SDK where appropriate.</p>
+<h2 id="do-not-accept-unlimited-custom-engineering-for-free" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Do not accept unlimited custom engineering for free</h2>
+<p class="text-[16px] mb-4 leading-relaxed">Every significant OEM customization should have a paid commercial scope.</p>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="35-recommended-legal-structure" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">35. Recommended Legal Structure</h1>
+<p class="text-[16px] mb-4 leading-relaxed">Use four core documents.</p>
+<h2 id="1-mutual-nda" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">1. Mutual NDA</h2>
+<p class="text-[16px] mb-4 leading-relaxed">Protects confidential technical and commercial information.</p>
+<h2 id="2-strategic-partnership-agreement" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">2. Strategic Partnership Agreement</h2>
+<p class="text-[16px] mb-4 leading-relaxed">Defines:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Relationship</li>
+<li>Responsibilities</li>
+<li>Commercial framework</li>
+<li>Territories</li>
+<li>Governance</li>
+<li>Term</li>
+<li>General rights</li>
+</ul>
+<h2 id="3-joint-development-agreement" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">3. Joint Development Agreement</h2>
+<p class="text-[16px] mb-4 leading-relaxed">Defines:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Engineering scope</li>
+<li>Milestones</li>
+<li>Funding</li>
+<li>Technical deliverables</li>
+<li>Foreground IP</li>
+<li>Testing</li>
+<li>Acceptance criteria</li>
+</ul>
+<h2 id="4-commercialization-agreement" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">4. Commercialization Agreement</h2>
+<p class="text-[16px] mb-4 leading-relaxed">Defines:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Pricing</li>
+<li>Revenue sharing</li>
+<li>Customer ownership</li>
+<li>Licensing</li>
+<li>Support</li>
+<li>Production</li>
+<li>Distribution</li>
+<li>Commercial obligations</li>
+</ul>
+<p class="text-[16px] mb-4 leading-relaxed">This is cleaner than putting everything into one agreement.</p>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="36-recommended-starting-deal" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">36. Recommended Starting Deal</h1>
+<h2 id="relationship" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Relationship</h2>
+<p class="text-[16px] mb-4 leading-relaxed"><strong>Strategic Automotive Technology Partnership</strong></p>
+<h2 id="initial-term" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Initial Term</h2>
+<p class="text-[16px] mb-4 leading-relaxed"><strong>3 years + 2-year renewal option</strong></p>
+<h2 id="silicon" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Silicon</h2>
+<p class="text-[16px] mb-4 leading-relaxed">Netrasemi is the <strong>preferred silicon platform</strong> for designated automotive configurations.</p>
+<h2 id="os" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">OS</h2>
+<p class="text-[16px] mb-4 leading-relaxed">Svashasan OS remains exclusively owned by Svashasan.</p>
+<h2 id="hardware-ip" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Hardware IP</h2>
+<p class="text-[16px] mb-4 leading-relaxed">Netrasemi retains ownership.</p>
+<h2 id="joint-ip" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Joint IP</h2>
+<p class="text-[16px] mb-4 leading-relaxed">Joint ownership only where the invention is genuinely inseparable and explicitly identified.</p>
+<h2 id="joint-platform-revenue" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Joint Platform Revenue</h2>
+<p class="text-[16px] mb-4 leading-relaxed"><strong>Netrasemi 55% / Svashasan 45%</strong></p>
+<h2 id="joint-engineering" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Joint Engineering</h2>
+<p class="text-[16px] mb-4 leading-relaxed"><strong>Netrasemi 60% / Svashasan 40%</strong></p>
+<h2 id="os-licensing" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">OS Licensing</h2>
+<p class="text-[16px] mb-4 leading-relaxed"><strong>100% Svashasan</strong></p>
+<h2 id="silicon-revenue" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Silicon Revenue</h2>
+<p class="text-[16px] mb-4 leading-relaxed"><strong>100% Netrasemi</strong></p>
+<h2 id="fleet-cloud" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Fleet / Cloud</h2>
+<p class="text-[16px] mb-4 leading-relaxed">Primarily Svashasan.</p>
+<h2 id="custom-silicon" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Custom Silicon</h2>
+<p class="text-[16px] mb-4 leading-relaxed">Netrasemi receives majority economics.</p>
+<h2 id="oem-platform" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">OEM Platform</h2>
+<p class="text-[16px] mb-4 leading-relaxed"><strong>Netrasemi 55% / Svashasan 45%</strong></p>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="37-the-strongest-strategic-sentence-for-netrasemi" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">37. The Strongest Strategic Sentence for Netrasemi</h1>
+<p class="text-[16px] mb-4 leading-relaxed">Recommended positioning:</p>
+<blockquote class="border-l-4 border-gray-800 pl-4 my-5 text-[16px] leading-relaxed text-gray-800 italic"><strong>“Netrasemi gives Svashasan the silicon foundation required to build an indigenous vehicle operating platform, while Svashasan gives Netrasemi something equally strategic: an automotive software stack and OEM-ready reference platform that turns Netrasemi silicon into a complete vehicle computing solution.”</strong></blockquote>
+<p class="text-[16px] mb-4 leading-relaxed">Follow with:</p>
+<blockquote class="border-l-4 border-gray-800 pl-4 my-5 text-[16px] leading-relaxed text-gray-800 italic"><strong>“We are not proposing a reseller relationship. We are proposing a hardware-software platform partnership where Netrasemi owns the silicon layer, Svashasan owns the vehicle OS layer, and together we create an OEM-ready automotive compute platform.”</strong></blockquote>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="38-ultimate-positioning" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">38. Ultimate Positioning</h1>
+<p class="text-[16px] mb-4 leading-relaxed">The end-state should look like:</p>
+<pre class="text-[13px] sm:text-[14px] leading-relaxed font-mono bg-[#fffdf7] border border-[#d9d2c5] text-[#161513] p-4 mb-6 overflow-x-auto whitespace-pre">                     OEM
+                      │
+                      ▼
+        ┌────────────────────────────┐
+        │  Netrasemi + Svashasan     │
+        │  Vehicle Compute Platform  │
+        └─────────────┬──────────────┘
+                      │
+        ┌─────────────┴──────────────┐
+        │                            │
+   Netrasemi                     Svashasan
+   Silicon                       OS
+        │                            │
+        │                    Perception / Fusion
+        │                    ADAS / Autonomy
+        │                    OTA / Fleet
+        │                            │
+        └──────────────┬─────────────┘
+                       │
+                       ▼
+                 Production EV
+                       │
+                       ▼
+                 Fleet Platform</pre>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="39-overall-strategic-verdict" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">39. Overall Strategic Verdict</h1>
+<p class="text-[16px] mb-4 leading-relaxed">This is potentially a very strong partnership and should be pursued if technical and commercial diligence validates the underlying hardware, SDK, automotive qualification path and execution capabilities.</p>
+<p class="text-[16px] mb-4 leading-relaxed">The partnership should be:</p>
+<blockquote class="border-l-4 border-gray-800 pl-4 my-5 text-[16px] leading-relaxed text-gray-800 italic"><strong>Asymmetric economically but balanced strategically.</strong></blockquote>
+<p class="text-[16px] mb-4 leading-relaxed">Netrasemi should receive the slightly larger commercial share because it carries semiconductor development, hardware and manufacturing risk.</p>
+<p class="text-[16px] mb-4 leading-relaxed">Svashasan should retain:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>100% ownership of its core OS</li>
+<li>100% ownership of pre-existing software IP</li>
+<li>Core autonomy/perception IP</li>
+<li>Software licensing economics</li>
+<li>Fleet/cloud economics</li>
+<li>The ability to support other silicon when necessary</li>
+</ul>
+<p class="text-[16px] mb-4 leading-relaxed">The biggest opportunity is not the first joint demonstration.</p>
+<p class="text-[16px] mb-4 leading-relaxed">The bigger opportunity is establishing a loop where:</p>
+<blockquote class="border-l-4 border-gray-800 pl-4 my-5 text-[16px] leading-relaxed text-gray-800 italic"><strong>Netrasemi silicon becomes optimized for Svashasan workloads, while Svashasan OS becomes optimized for Netrasemi silicon.</strong></blockquote>
+<p class="text-[16px] mb-4 leading-relaxed">Then the combined reference platform can be taken to OEMs.</p>
+<p class="text-[16px] mb-4 leading-relaxed">The partnership should therefore be sold internally at Svashasan as:</p>
+<blockquote class="border-l-4 border-gray-800 pl-4 my-5 text-[16px] leading-relaxed text-gray-800 italic"><strong>“We are not becoming dependent on Netrasemi. We are making Netrasemi our first strategic silicon platform while turning the relationship into an OEM-scale hardware/software ecosystem.”</strong></blockquote>
+<p class="text-[16px] mb-4 leading-relaxed">And to Netrasemi:</p>
+<blockquote class="border-l-4 border-gray-800 pl-4 my-5 text-[16px] leading-relaxed text-gray-800 italic"><strong>“You don&#x27;t just get a software customer. You get an automotive software platform around your silicon.”</strong></blockquote>
+<p class="text-[16px] mb-4 leading-relaxed">That is the version of the deal where <strong>Netrasemi wins slightly more today, while both companies have the potential to win substantially more if the OEM platform succeeds.</strong></p>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="40-executive-summary" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">40. Executive Summary</h1>
+<h2 id="svashasan-labs" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Svashasan Labs</h2>
+<p class="text-[16px] mb-4 leading-relaxed">Brings:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Vehicle operating system</li>
+<li>Perception</li>
+<li>Sensor fusion</li>
+<li>ADAS</li>
+<li>Autonomy orchestration</li>
+<li>Vehicle software</li>
+<li>OTA</li>
+<li>Fleet platform</li>
+<li>Software architecture</li>
+<li>OEM-facing software proposition</li>
+</ul>
+<h2 id="netrasemi" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Netrasemi</h2>
+<p class="text-[16px] mb-4 leading-relaxed">Brings:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1">
+<li>Indigenous silicon</li>
+<li>Edge AI compute</li>
+<li>SoC / SoM</li>
+<li>Hardware accelerators</li>
+<li>BSP</li>
+<li>SDK</li>
+<li>Hardware security</li>
+<li>Hardware engineering</li>
+<li>Silicon roadmap</li>
+<li>Manufacturing ecosystem</li>
+</ul>
+<h2 id="together" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Together</h2>
+<p class="text-[16px] mb-4 leading-relaxed">Create:</p>
+<blockquote class="border-l-4 border-gray-800 pl-4 my-5 text-[16px] leading-relaxed text-gray-800 italic"><strong>An OEM-ready indigenous automotive compute and software platform.</strong></blockquote>
+<h3 id="strategic-relationship" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Strategic relationship</h3>
+<p class="text-[16px] mb-4 leading-relaxed"><strong>Preferred silicon + vehicle OS partnership</strong></p>
+<h3 id="commercial-relationship" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Commercial relationship</h3>
+<p class="text-[16px] mb-4 leading-relaxed"><strong>Netrasemi slightly favored</strong></p>
+<h3 id="ip-relationship" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">IP relationship</h3>
+<p class="text-[16px] mb-4 leading-relaxed"><strong>Each party retains its core IP</strong></p>
+<h3 id="joint-ip" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Joint IP</h3>
+<p class="text-[16px] mb-4 leading-relaxed"><strong>Only explicit, inseparable inventions</strong></p>
+<h3 id="first-technical-target" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">First technical target</h3>
+<p class="text-[16px] mb-4 leading-relaxed"><strong>Svashasan OS running on Netrasemi hardware</strong></p>
+<h3 id="first-commercial-target" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">First commercial target</h3>
+<p class="text-[16px] mb-4 leading-relaxed"><strong>OEM proof-of-concept</strong></p>
+<h3 id="long-term-target" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Long-term target</h3>
+<p class="text-[16px] mb-4 leading-relaxed"><strong>Production EV programs and recurring per-vehicle software/silicon revenue</strong></p>
+<h3 id="long-term-moat" class="text-[16px] font-semibold text-gray-800 mb-3 mt-6">Long-term moat</h3>
+<p class="text-[16px] mb-4 leading-relaxed"><strong>Hardware/software co-optimization and OEM design wins</strong></p>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="41-one-line-strategy" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">41. One-Line Strategy</h1>
+<blockquote class="border-l-4 border-gray-800 pl-4 my-5 text-[16px] leading-relaxed text-gray-800 italic"><strong>Netrasemi provides the compute foundation, Svashasan provides the vehicle intelligence layer, and together they sell OEMs a complete indigenous software-defined vehicle platform with Netrasemi receiving slightly higher economics while Svashasan retains its core OS and software IP.</strong></blockquote>
+        </div>
+    </main>
+    </div>
+
+  <!-- Footer -->
+  <footer style="background: #ffffff; border-top: 1px solid #f3f4f6; margin-top: 64px; padding: 40px 20px; color: #6b7280; font-size: 0.85rem;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; margin-bottom: 40px;">
+        <div>
+          <h5 style="font-weight: 650; color: #0b0b0b; margin-bottom: 12px; font-size: 0.9rem;">Research</h5>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+            <li><a href="index.html" style="color: inherit; text-decoration: none;">Research Overview</a></li>
+            <li><a href="index (2).html" style="color: inherit; text-decoration: none;">Moving Turns</a></li>
+            <li><a href="heuristic.html" style="color: inherit; text-decoration: none;">Heuristic Baseline</a></li>
+            <li><a href="absence.html" style="color: inherit; text-decoration: none;">Evidence of Absence</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 style="font-weight: 650; color: #0b0b0b; margin-bottom: 12px; font-size: 0.9rem;">Company</h5>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+            <li><a href="https://svashasan.com/" style="color: inherit; text-decoration: none;">About Svashasan</a></li>
+            <li><a href="https://svashasan.com/research/" style="color: inherit; text-decoration: none;">Research Portal</a></li>
+            <li><a href="mailto:namaste@svashasan.com" style="color: inherit; text-decoration: none;">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 style="font-weight: 650; color: #0b0b0b; margin-bottom: 12px; font-size: 0.9rem;">Resources</h5>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+            <li><a href="https://svashasan.com/support" style="color: inherit; text-decoration: none;">Developer Documentation</a></li>
+            <li><a href="#" style="color: inherit; text-decoration: none;">API Docs</a></li>
+            <li><a href="#" style="color: inherit; text-decoration: none;">Getting Started</a></li>
+          </ul>
+        </div>
+      </div>
+      <div style="border-top: 1px solid #f3f4f6; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+        <div>© 2026 Svashasan Labs. All Rights Reserved.</div>
+        <div style="display: flex; gap: 20px; font-size: 0.8rem;">
+          <a href="https://svashasan.com/privacy-policy" style="color: inherit; text-decoration: none;">Privacy Policy</a>
+          <span>|</span>
+          <a href="https://svashasan.com/terms-of-use" style="color: inherit; text-decoration: none;">Terms & Conditions</a>
+          <span>|</span>
+          <a href="https://svashasan.com/cookie-policy" style="color: inherit; text-decoration: none;">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<script>
+  // Scrollspy for left navigation
+  const navLinks = document.querySelectorAll('#toc .nav-link');
+  const sections = Array.from(navLinks).map(link => document.querySelector(link.getAttribute('href'))).filter(Boolean);
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const id = entry.target.getAttribute('id');
+      const link = document.querySelector(`#toc .nav-link[href="#${id}"]`);
+      if (entry.isIntersecting) {
+        navLinks.forEach(l => l.classList.remove('active'));
+        if (link) link.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-20% 0px -70% 0px', threshold: 0 });
+
+  sections.forEach(section => observer.observe(section));
+
+  // Search functionality
+  const searchInput = document.getElementById('search-input');
+  const searchResults = document.getElementById('search-results');
+  const headings = Array.from(document.querySelectorAll('main h1, main h2, main h3')).filter(h => h.id);
+
+  function handleGlobalSearch(value) {
+    const query = value.trim().toLowerCase();
+    if (query.length < 2) {
+      searchResults.classList.add('hidden');
+      searchResults.innerHTML = '';
+      return;
+    }
+    const matches = headings.filter(h => h.textContent.toLowerCase().includes(query)).slice(0, 10);
+    if (matches.length === 0) {
+      searchResults.classList.add('hidden');
+      searchResults.innerHTML = '';
+      return;
+    }
+    searchResults.innerHTML = matches.map(h => 
+      `<a href="#${h.id}" class="block px-4 py-2 text-xs text-brandBlack hover:bg-gray-100">${h.textContent}</a>`
+    ).join('');
+    searchResults.classList.remove('hidden');
+  }
+
+  // Hide results when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+      searchResults.classList.add('hidden');
+    }
+  });
+
+  // Keyboard navigation
+  searchInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      searchResults.classList.add('hidden');
+      searchInput.blur();
+    }
+  });
+</script>
+
+</body>
+</html>
